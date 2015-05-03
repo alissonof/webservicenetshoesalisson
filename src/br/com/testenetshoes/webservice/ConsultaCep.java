@@ -27,7 +27,7 @@ public class ConsultaCep {
 				if(webServiceCep.wasSuccessful()){
 					end.setCep(newCep);
 					end.setRua(webServiceCep.getLogradouro());
-					end.setBairro(webServiceCep.getLogradouro());
+					end.setBairro(webServiceCep.getBairro());
 					end.setCidade(webServiceCep.getCidade());
 					end.setEstado(webServiceCep.getUf());
 					end.setStatus(0);
